@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="../plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="../plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="../plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!-- Calendar CSS -->
+    <link href="../plugins/bower_components/calendar/dist/fullcalendar.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    
+   <!--name ndy//  css-->
+    <link rel="stylesheet" type="text/css" href="css/ndy-reset.css"/>
+   <!--End name ndy//  css-->
+  
+</head>
+
+<body class="fix-header">
+   <!--正在加载-->
+    <div class="preloader" id="ndy-preloader"></div>
+
+    <div id="wrapper">
+        <!--上导航-->
+        <div id="ndy-header"></div>
+        <!--z左侧导航-->
+        <div class="navbar-default sidebar" role="navigation" id="ndy-leftSide"></div>
+         
+       <!--content-->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Dashboard 1</h4>
+                    </div>
+                    <div class="col-lg-7 col-sm-8 col-md-8 col-xs-12 text-right col-xs-12">	
+                    	<a href="javascript:;" class="btn btn-outline btn-info">当天</a>
+                    	<a href="javascript:;" class="btn btn-outline btn-info">一周</a>
+                    	<a href="javascript:;" class="btn btn-outline btn-info">一月</a>
+                   	</div>
+                    <div class="col-lg-2 col-sm-8 col-md-8 col-xs-12">
+                        <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>
+                       
+                        <ol class="breadcrumb">
+                            <li><a href="#">pages</a></li>
+                            <li class="active">index</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                	<div class="col-sm-12">
+	                    <div class="ndy_sms">
+	                        <div class="row row-in">
+	                            <div class="col-lg-3 col-sm-6 row-in-br">
+	                            	<div class="col-in white-box">
+	                            		<p >发送短信</p>
+	                            		<div class="ndy_num">
+	                            			<h2>1980005</h2>
+	                            			<span class="text-info">
+	                            				<b>50%</b>
+	                            				<i class="fa fa-mail-reply-all"></i>
+	                            			</span>
+	                            		</div>
+	                            	</div>
+	                            </div>
+	                            <div class="col-lg-3 col-sm-6 row-in-br  b-r-none">
+	                            	<div class="col-in white-box">
+	                            		<p>接收人员</p>
+	                            		<div class="ndy_num">
+	                            			<h2>198000</h2>
+	                            			<span class="text-info">
+	                            				<b>50%</b>
+	                            				<i class="fa fa-mail-reply-all"></i>
+	                            			</span>
+	                            		</div>
+	                            	</div>
+	                            </div>
+	                            <div class="col-lg-3 col-sm-6 row-in-br">
+	                            	<div class="col-in white-box">
+	                            		<p>回复短信</p>
+	                            		<div class="ndy_num">
+	                            			<h2>198000</h2>
+	                            			<span class="text-info">
+	                            				<b>50%</b>
+	                            				<i class="fa fa-mail-reply-all"></i>
+	                            			</span>
+	                            		</div>
+	                            	</div>
+	                            </div>
+	                            <div class="col-lg-3 col-sm-6  b-0">
+	                            	<div class="col-in white-box">
+	                            		<p>用户总数</p>
+	                            		<div class="ndy_num">
+	                            			<h2>198000</h2>
+	                            			<span class="text-info">
+	                            				<b>50%</b>
+	                            				<i class="fa fa-mail-reply-all"></i>
+	                            			</span>
+	                            		</div>
+	                            	</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="container-fluid">
+            	<!--图表-->
+                <div class="row white-box">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="white-box">
+                            <h3 class="box-title">Bar Chart</h3>
+                            <div>
+                                <canvas id="chart2" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 ndy-table">
+                    	<table class="table table-hover">
+                    		<thead>
+                    			<tr>
+                    				<th colspan="2"><h2>发送记录</h2></th>
+                    			</tr>
+                    		</thead>
+                    		<tbody>
+                    			<tr>
+	                    			<th>
+	                    				<i class="fa fa-book"></i>
+	                    				<p>January</p>
+	                    			</th>
+	                    			<td>
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    			</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<th>
+	                    				<i class="fa fa-book"></i>
+	                    				<p>February</p>
+	                    			</th>
+	                    			<td>
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    			</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<th>
+	                    				<i class="fa fa-book"></i>
+	                    				<p>March</p>
+	                    			</th>
+	                    			<td>
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    				asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd
+	                    			</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<th>
+	                    				<i class="fa fa-book"></i>
+	                    				<p>April</p>
+	                    			</th>
+	                    			<td>asjkdaskldj alksdj kalsjd klasjd klasjd klasj dalsk jdlk asjd</td>
+	                    		</tr>
+                    		</tbody>
+                    		
+                    		
+                    	</table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!--右侧边栏-->
+        <div class="col-md-4 col-lg-3" id="ndy-rightSilde"></div>
+   
+        
+        
+        <!--下导航-->
+        <div id="ndy-footer"></div>
+        
+    </div>
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+   </div>
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- Chart JS -->
+    <!--<script src="../plugins/bower_components/Chart.js/chartjs.init.js"></script>-->
+    <script src="../plugins/bower_components/Chart.js/Chart.min.js"></script>
+    <script type="text/javascript">
+    	var _this = true;
+    </script>
+</body>
+</html>
